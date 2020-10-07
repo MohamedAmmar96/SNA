@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/Linearicons.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/bootstrap-ul.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -160,164 +160,188 @@
     <div class="cats">
         <div class="container">
             <div class="cats-box">
+
                 <div class="sort wow animate__zoomIn" data-wow-duration="0.4s">
-                    <select class="sort-by selectpicker" data-width="fit" title="Sort By">
-                        <option>New Arrivals</option>
-                        <option>Current Bestsellers</option>
-                        <option>All Time Bestsellers</option>
-                        <option>Price, low to high</option>
-                        <option>Price, high to low</option>
-                        <option>Random</option>
-                    </select>
+                    <p class="sort-name">Sort by</p>
+                    <ul class="sort-list list-unstyled">
+                        <li class="option-li">New Arrivals</li>
+                        <li class="option-li">Current Bestsellers</li>
+                        <li class="option-li">All Time Bestsellers</li>
+                        <li class="option-li">Price, low to high</li>
+                        <li class="option-li">Price, high to low</li>
+                        <li class="option-li">Random</li>
+                    </ul>
                 </div>
+
                 <div class="filters">
+                    <div class="overlay-box5"></div>
                     <p class="filters-name wow animate__zoomIn" data-wow-duration="0.4s">Filters</p>
-                    <div class="filters-box wow animate__zoomIn" data-wow-duration="0.4s">
-                        <button class="close-filters"><span class="lnr lnr-cross"></span></button>
+                    <button class="close-filters"><span class="lnr lnr-cross"></span></button>
+                    <div class="filters-box wow">
+
                         <div class="center-filters">
-                            <select class="size selectpicker" data-width="fit" title="Size">
-                            <option>A4 (21x29.7 cm)</option>
-                            <option>A3 (29.7x42 cm)</option>
-                            <option>A2 (42x59.4 cm)</option>
-                            <option>30x40 cm</option>
-                            <option>40x50 cm</option>
-                            <option>50x50 cm</option>
-                            <option>50x70 cm</option>
-                            <option>70x100 cm</option>
-                            <option>other sizes</option>
-                            <option>small</option>
-                            <option>medium</option>
-                            <option>large</option>
-                        </select>
+                            <div class="size">
+                                <p class="size-name">Size</p>
+                                <ul class="size-list list-unstyled">
+                                    <li class="option-li">A4 (21x29.7 cm)</li>
+                                    <li class="option-li">A3 (29.7x42 cm)</li>
+                                    <li class="option-li">A2 (42x59.4 cm)</li>
+                                    <li class="option-li">30x40 cm</li>
+                                    <li class="option-li">40x50 cm</li>
+                                    <li class="option-li">50x50 cm</li>
+                                    <li class="option-li">50x70 cm</li>
+                                    <li class="option-li">70x100 cm</li>
+                                    <li class="option-li">other sizes</li>
+                                    <li class="option-li">small</li>
+                                    <li class="option-li">medium</li>
+                                    <li class="option-li">large</li>
+                                </ul>
+                            </div>
 
-                            <select class="orientation selectpicker" data-width="fit" title="Orientation">
-                            <option>Horizontal</option>
-                            <option>Square</option>
-                            <option>Vertical</option>
-                        </select>
+                            <div class="orientation">
+                                <p class="orientation-name">Orientation</p>
+                                <ul class="orientation-list list-unstyled">
+                                    <li class="option-li">Horizontal</li>
+                                    <li class="option-li">Square</li>
+                                    <li class="option-li">Vertical</li>
+                                </ul>
+                            </div>
 
-                            <select class="price selectpicker" data-width="fit" title="Price">
-                            <option>10 - 50 EUR</option>
-                            <option>50 - 100 EUR</option>
-                            <option>100 - 150 EUR</option>
-                            <option>150 - 200 EUR</option>
-                            <option>250 - 300 EUR</option>
-                            <option>more than 300 EUR</option>
-                        </select>
+                            <div class="price">
+                                <p class="price-name">Price</p>
+                                <ul class="price-list list-unstyled">
+                                    <li class="option-li">10 - 50 EUR</li>
+                                    <li class="option-li">50 - 100 EUR</li>
+                                    <li class="option-li">100 - 150 EUR</li>
+                                    <li class="option-li">150 - 200 EUR</li>
+                                    <li class="option-li">250 - 300 EUR</li>
+                                    <li class="option-li">more than 300 EUR</li>
+                                </ul>
+                            </div>
 
-                            <select class="color selectpicker" data-width="fit" title="Color">
-                            <option>Black</option>
-                            <option>White</option>
-                            <option>Beige</option>
-                            <option>Black/White</option>
-                            <option>Blue</option>
-                            <option>Brown</option>
-                            <option>Gold</option>
-                            <option>Green</option>
-                            <option>Grey</option>
-                            <option>Orange</option>
-                            <option>Pink</option>
-                            <option>Purple</option>
-                            <option>Red</option>
-                            <option>Yellow</option>
-                            <option>Multi</option>
-                        </select>
+                            <div class="color">
+                                <p class="color-name">Color</p>
+                                <ul class="color-list list-unstyled">
+                                    <li class="option-li">Black</li>
+                                    <li class="option-li">White</li>
+                                    <li class="option-li">Beige</li>
+                                    <li class="option-li">Black/White</li>
+                                    <li class="option-li">Blue</li>
+                                    <li class="option-li">Brown</li>
+                                    <li class="option-li">Gold</li>
+                                    <li class="option-li">Green</li>
+                                    <li class="option-li">Grey</li>
+                                    <li class="option-li">Orange</li>
+                                    <li class="option-li">Pink</li>
+                                    <li class="option-li">Purple</li>
+                                    <li class="option-li">Red</li>
+                                    <li class="option-li">Yellow</li>
+                                    <li class="option-li">Multi</li>
+                                </ul>
+                            </div>
 
-                            <select class="artist selectpicker" data-width="fit" title="Artist">
-                            <option>Aelxandra Papadimouli</option>
-                            <option>Alium</option>
-                            <option>Ana Frois</option>
-                            <option>Anastasia Benko</option>
-                            <option>Anna Johansson</option>
-                            <option>Ana Morner</option>
-                            <option>Anne Nowak</option>
-                            <option>Atelier by Mintstudio</option>
-                            <option>Atelier Cph</option>
-                            <option>Aure</option>
-                            <option>Berit Mogensen Lopez</option>
-                            <option>By Garmi</option>
-                            <option>Bycdesign Studio</option>
-                            <option>Chieska Fortune Smith</option>
-                            <option>Christina Kayser O.</option>
-                            <option>Coco Lapine</option>
-                            <option>Ekaterina Koroleva</option>
-                            <option>Felix Pottinger</option>
-                            <option>Fine Little Day</option>
-                            <option>Flip</option>
-                            <option>Francios Fontaine</option>
-                            <option>Galerie Maeght</option>
-                            <option>Gurilla</option>
-                            <option>Hanna Peterson</option>
-                            <option>Hein Studio</option>
-                            <option>Hilde Mork</option>
-                            <option>Jan Skacelik</option>
-                            <option>Johannes Geppert</option>
-                            <option>Julia Hallstrom Hjort</option>
-                            <option>Julia Lysen</option>
-                            <option>Jorgen Hansson</option>
-                            <option>Kinfolk</option>
-                            <option>Laura Nielsen</option>
-                            <option>Leise Dich Abrahamsen</option>
-                            <option>Lemon</option>
-                            <option>Lentov</option>
-                            <option>Lisa Wirenfelt</option>
-                            <option>Little Detroit</option>
-                            <option>louLou Avenue</option>
-                            <option>Lucrecia Rey Caro</option>
-                            <option>Malene Birger</option>
-                            <option>Maria Leinonen</option>
-                            <option>Martino Pietropoli</option>
-                            <option>MIJO Studio</option>
-                            <option>Mille Henriksen</option>
-                            <option>Moe Made it</option>
-                            <option>Nicoline A. Milton</option>
-                            <option>Noa Noon Gammelgaard</option>
-                            <option>Nord Projects</option>
-                            <option>Nygards Maria Bengtsson</option>
-                            <option>Nynne Rosenvinge</option>
-                            <option>Paper Collective</option>
-                            <option>People I've Loved</option>
-                            <option>Peytil</option>
-                            <option>Playtype</option>
-                            <option>Riikka Kantinkoski</option>
-                            <option>Robin Ahlgren</option>
-                            <option>Rosenstiels</option>
-                            <option>RUBIN Studio</option>
-                            <option>Sandra Blomen Maschinsky</option>
-                            <option>Sheryn Bullis</option>
-                            <option>Silke Bonde</option>
-                            <option>Sofia Lind</option>
-                            <option>SOMEE</option>
-                            <option>Studio Paradissi</option>
-                            <option>Tenna Elisabeth Studio</option>
-                            <option>Tilde Bay</option>
-                            <option>Tinka Luiga</option>
-                            <option>Tiny Stories</option>
-                            <option>Wensi Zhai</option>
-                            <option>Asthet</option>
-                        </select>
+                            <div class="artist">
+                                <p class="artist-name">Artist</p>
+                                <ul class="artist-list list-unstyled">
+                                    <li class="option-li">Aelxandra Papadimouli</li>
+                                    <li class="option-li">Alium</li>
+                                    <li class="option-li">Ana Frois</li>
+                                    <li class="option-li">Anastasia Benko</li>
+                                    <li class="option-li">Anna Johansson</li>
+                                    <li class="option-li">Ana Morner</li>
+                                    <li class="option-li">Anne Nowak</li>
+                                    <li class="option-li">Atelier by Mintstudio</li>
+                                    <li class="option-li">Atelier Cph</li>
+                                    <li class="option-li">Aure</li>
+                                    <li class="option-li">Berit Mogensen Lopez</li>
+                                    <li class="option-li">By Garmi</li>
+                                    <li class="option-li">Bycdesign Studio</li>
+                                    <li class="option-li">Chieska Fortune Smith</li>
+                                    <li class="option-li">Christina Kayser O.</li>
+                                    <li class="option-li">Coco Lapine</li>
+                                    <li class="option-li">Ekaterina Koroleva</li>
+                                    <li class="option-li">Felix Pottinger</li>
+                                    <li class="option-li">Fine Little Day</li>
+                                    <li class="option-li">Flip</li>
+                                    <li class="option-li">Francios Fontaine</li>
+                                    <li class="option-li">Galerie Maeght</li>
+                                    <li class="option-li">Gurilla</li>
+                                    <li class="option-li">Hanna Peterson</li>
+                                    <li class="option-li">Hein Studio</li>
+                                    <li class="option-li">Hilde Mork</li>
+                                    <li class="option-li">Jan Skacelik</li>
+                                    <li class="option-li">Johannes Geppert</li>
+                                    <li class="option-li">Julia Hallstrom Hjort</li>
+                                    <li class="option-li">Julia Lysen</li>
+                                    <li class="option-li">Jorgen Hansson</li>
+                                    <li class="option-li">Kinfolk</li>
+                                    <li class="option-li">Laura Nielsen</li>
+                                    <li class="option-li">Leise Dich Abrahamsen</li>
+                                    <li class="option-li">Lemon</li>
+                                    <li class="option-li">Lentov</li>
+                                    <li class="option-li">Lisa Wirenfelt</li>
+                                    <li class="option-li">Little Detroit</li>
+                                    <li class="option-li">louLou Avenue</li>
+                                    <li class="option-li">Lucrecia Rey Caro</li>
+                                    <li class="option-li">Malene Birger</li>
+                                    <li class="option-li">Maria Leinonen</li>
+                                    <li class="option-li">Martino Pietropoli</li>
+                                    <li class="option-li">MIJO Studio</li>
+                                    <li class="option-li">Mille Henriksen</li>
+                                    <li class="option-li">Moe Made it</li>
+                                    <li class="option-li">Nicoline A. Milton</li>
+                                    <li class="option-li">Noa Noon Gammelgaard</li>
+                                    <li class="option-li">Nord Projects</li>
+                                    <li class="option-li">Nygards Maria Bengtsson</li>
+                                    <li class="option-li">Nynne Rosenvinge</li>
+                                    <li class="option-li">Paper Collective</li>
+                                    <li class="option-li">People I've Loved</li>
+                                    <li class="option-li">Peytil</li>
+                                    <li class="option-li">Playtype</li>
+                                    <li class="option-li">Riikka Kantinkoski</li>
+                                    <li class="option-li">Robin Ahlgren</li>
+                                    <li class="option-li">Rosenstiels</li>
+                                    <li class="option-li">RUBIN Studio</li>
+                                    <li class="option-li">Sandra Blomen Maschinsky</li>
+                                    <li class="option-li">Sheryn Bullis</li>
+                                    <li class="option-li">Silke Bonde</li>
+                                    <li class="option-li">Sofia Lind</li>
+                                    <li class="option-li">SOMEE</li>
+                                    <li class="option-li">Studio Paradissi</li>
+                                    <li class="option-li">Tenna Elisabeth Studio</li>
+                                    <li class="option-li">Tilde Bay</li>
+                                    <li class="option-li">Tinka Luiga</li>
+                                    <li class="option-li">Tiny Stories</li>
+                                    <li class="option-li">Wensi Zhai</li>
+                                    <li class="option-li">Asthet</li>
+                                </ul>
+                            </div>
 
-                            <select class="category selectpicker" data-width="fit" title="Category">
-                            <option>Abstract</option>
-                            <option>Animals</option>
-                            <option>Architecture</option>
-                            <option>Botanic</option>
-                            <option>Drawing</option>
-                            <option>Food</option>
-                            <option>Graphic Design</option>
-                            <option>Illustration</option>
-                            <option>Kids</option>
-                            <option>Limited Edition</option>
-                            <option>Line Art</option>
-                            <option>Nature</option>
-                            <option>Photo Art</option>
-                            <option>Sale</option>
-                            <option>THE POSTER CLUB collection</option>
-                            <option>Typography</option>
-                            <option>Watercolor</option>
-                            <option>Words & Quotes</option>
-                        </select>
+                            <div class="category">
+                                <p class="category-name">Category</p>
+                                <ul class="category-list list-unstyled">
+                                    <li class="option-li">Abstract</li>
+                                    <li class="option-li">Animals</li>
+                                    <li class="option-li">Architecture</li>
+                                    <li class="option-li">Botanic</li>
+                                    <li class="option-li">Drawing</li>
+                                    <li class="option-li">Food</li>
+                                    <li class="option-li">Graphic Design</li>
+                                    <li class="option-li">Illustration</li>
+                                    <li class="option-li">Kids</li>
+                                    <li class="option-li">Limited Edition</li>
+                                    <li class="option-li">Line Art</li>
+                                    <li class="option-li">Nature</li>
+                                    <li class="option-li">Photo Art</li>
+                                    <li class="option-li">Sale</li>
+                                    <li class="option-li">THE POSTER CLUB collection</li>
+                                    <li class="option-li">Typography</li>
+                                    <li class="option-li">Watercolor</li>
+                                    <li class="option-li">Words & Quotes</li>
+                                </ul>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -781,7 +805,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/bootstrap-ul.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -198,13 +198,25 @@ $(document).ready(function() {
     }
 
     //This is to Open Side Menu
+
+    // $(".filters .filters-name").click(function() {
+    //     $(".overlay-box5").slideDown(500);
+    // });
+
     $(".filters .filters-name").click(function() {
-        $(".filters-box").slideDown(500);
+        $(".filters .filters-name").addClass("rotate")
+        $(".filters .close-filters").fadeIn(300)
+        $(".filters-box").slideDown(300);
     });
 
     $(".close-filters").click(function() {
-        $(".filters .filters-box").slideUp(500);
+        // $(".overlay-box5").slideUp(500);
+        $(".filters .filters-name").removeClass("rotate")
+        $(".filters .close-filters").fadeOut(300)
+        $(".filters-box").slideUp(300);
     });
+
+
 
     if ($(window).width() <= 991) {
         $(".features .features-box").addClass("owl-carousel owl-theme");
@@ -298,4 +310,50 @@ $(document).ready(function() {
             $(".last .footer-heading").removeClass("rotate")
         }
     });
+
+
+    // This is To Open sort list
+    $(".sort .sort-name").click(function() {
+        $(".sort .sort-name").toggleClass("rotate")
+        $(".sort .sort-list").slideToggle(300);
+    });
+
+    // This is To Open size list
+    $(".size .size-name").click(function() {
+        $(".size .size-name").toggleClass("rotate")
+        $(".size .size-list").slideToggle(300);
+    });
+
+
+    // This is To Open orientation list
+    $(".orientation .orientation-name").click(function() {
+        $(".orientation .orientation-name").toggleClass("rotate")
+        $(".orientation .orientation-list").slideToggle(300);
+    });
+
+    // This is To Open price list
+    $(".price .price-name").click(function() {
+        $(".price .price-name").toggleClass("rotate")
+        $(".price .price-list").slideToggle(300);
+    });
+
+
+    // This is To Open color list
+    $(".color .color-name").click(function() {
+        $(".color .color-name").toggleClass("rotate")
+        $(".color .color-list").slideToggle(300);
+    });
+
+    // This is To Open artist list
+    $(".artist .artist-name").click(function() {
+        $(".artist .artist-name").toggleClass("rotate")
+        $(".artist .artist-list").slideToggle(300);
+    });
+
+    // This is To Open category list
+    $(".category .category-name").click(function() {
+        $(".category .category-name").toggleClass("rotate")
+        $(".category .category-list").slideToggle(300);
+    });
+
 });
