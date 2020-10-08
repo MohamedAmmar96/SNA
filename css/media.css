@@ -165,6 +165,7 @@
         .filters-box .artist .artist-name,
         .filters-box .category .category-name {
             font-size: 20px;
+            text-align: center;
         }
         .cats-box .sort .sort-list {
             left: 80px;
@@ -179,6 +180,8 @@
         .filters-box .color .color-list,
         .filters-box .artist .artist-list,
         .filters-box .category .category-list {
+            position: relative;
+            top: auto;
             left: 50%;
         }
         html[dir=rtl] .filters-box .size .size-list,
@@ -531,6 +534,7 @@
         .filters-box .artist .artist-name,
         .filters-box .category .category-name {
             font-size: 20px;
+            text-align: center;
         }
         .cats-box .sort .sort-list {
             left: 80px;
@@ -545,6 +549,8 @@
         .filters-box .color .color-list,
         .filters-box .artist .artist-list,
         .filters-box .category .category-list {
+            position: relative;
+            top: auto;
             left: 50%;
         }
         html[dir=rtl] .filters-box .size .size-list,
