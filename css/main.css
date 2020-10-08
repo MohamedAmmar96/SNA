@@ -9,7 +9,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 body {
     font-family: 'Tajawal', sans-serif;
-    overflow-x: hidden;
     width: 100%;
 }
 
@@ -680,6 +679,13 @@ html[dir=rtl] .cart-open {
 
 .cats {
     padding: 20px 0;
+    position: sticky;
+    top: 82px;
+    background: #fff;
+    z-index: 99999;
+    /* box-shadow: 3px 3px 5px #0000001c; */
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
 }
 
 .cats .cats-box {

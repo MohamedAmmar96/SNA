@@ -107,6 +107,11 @@
             margin: 4px;
             outline: 0;
         }
+        .cats {
+            /* position: relative; */
+            top: 112px;
+            /* z-index: auto; */
+        }
         .cats .cats-box {
             justify-content: space-between;
         }
@@ -331,6 +336,11 @@
         /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                             Start Of Home Page 
         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .cats {
+            /* position: relative; */
+            top: 100px;
+            /* z-index: auto; */
+        }
         .menu .menu-btn .menu-icon {
             padding-top: 5px;
         }
@@ -452,6 +462,11 @@
             height: 8px;
             margin: 4px;
             outline: 0;
+        }
+        .cats {
+            /* position: relative; */
+            top: 112px;
+            /* z-index: auto; */
         }
         .cats .cats-box {
             justify-content: space-between;
@@ -792,6 +807,9 @@
             width: 1440px;
             padding-left: 15px;
             padding-right: 15px;
+        }
+        .cats {
+            top: 93px;
         }
         .cats-box .sort,
         .filters-box .size,

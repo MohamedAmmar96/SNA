@@ -26,7 +26,6 @@ wow.init();
 
 $(window).scroll(function() {
     if (($(this).scrollTop() >= 30) && ($(window).width() >= 992)) {
-        // $(".page-language").slideUp(300);
         $(".header").css("top", "-32px");
         $(".header").css("position", "fixed");
         $(".header").css("z-index", "99999");
@@ -41,19 +40,19 @@ $(window).scroll(function() {
         $(".header").css("z-index", "99999");
         $(".header").css("box-shadow", "10px 0 10px #0000001c");
         $(".page-intro").css("display", "none");
-        $(".header-content").css("padding", "10px 0 10px 0");
-        $(".header-content .logo").css("width", "80%");
-        $(".header-content .menu").css("height", "60px");
-        $(".header-content .terms").css("height", "60px");
+        // $(".header-content").css("padding", "10px 0 10px 0");
+        // $(".header-content .logo").css("width", "80%");
+        // $(".header-content .menu").css("height", "60px");
+        // $(".header-content .terms").css("height", "60px");
     } else if (($(window).width() <= 991)) {
         $(".header").css("top", "0");
         $(".header").css("position", "relative");
         $(".header").css("box-shadow", "none");
         $(".header").css("z-index", "auto");
-        $(".header-content").css("padding", "15px 0 15px 0");
-        $(".header-content .logo").css("width", "100%");
-        $(".header-content .menu").css("height", "70px");
-        $(".header-content .terms").css("height", "70px");
+        // $(".header-content").css("padding", "15px 0 15px 0");
+        // $(".header-content .logo").css("width", "100%");
+        // $(".header-content .menu").css("height", "70px");
+        // $(".header-content .terms").css("height", "70px");
     } else {
         // $(".page-language").slideDown(300);
         $(".header").css("top", "0");
@@ -64,7 +63,7 @@ $(window).scroll(function() {
         $(".header-content .logo").css("width", "100%");
         $(".header-content .menu").css("height", "85px");
         $(".header-content .terms").css("height", "85px");
-    }
+    };
 });
 
 
