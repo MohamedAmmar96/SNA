@@ -111,7 +111,7 @@ html[dir=rtl] .intro-content .page-language {
 
 .header-content .menu .menu-btn {
     cursor: pointer;
-    color: rgba(53, 53, 53, 0.6);
+    color: rgba(53, 53, 53, 1);
     transition: all 0.4s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -119,7 +119,7 @@ html[dir=rtl] .intro-content .page-language {
 }
 
 .header-content .menu .menu-btn:hover {
-    color: rgba(53, 53, 53, 1);
+    color: rgba(53, 53, 53, 0.6);
 }
 
 .menu .menu-btn .menu-icon {
@@ -199,7 +199,7 @@ html[dir=rtl] .side-menu .close {
 
 .menu-list-li .menu-list-link {
     position: relative;
-    color: rgba(53, 53, 53, 0.6);
+    color: rgba(53, 53, 53, 1);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 17px;
@@ -208,7 +208,7 @@ html[dir=rtl] .side-menu .close {
 }
 
 .menu-list-li .menu-list-link:hover {
-    color: rgba(53, 53, 53, 1);
+    color: rgba(53, 53, 53, 0.6);
 }
 
 .side-menu .menu-icons-list {
@@ -308,7 +308,7 @@ html[dir=rtl] .menu-open {
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
-    color: rgba(53, 53, 53, 0.6);
+    color: rgba(53, 53, 53, 1);
     /* padding: 15px 0; */
     transition: all 0.4s ease-in-out;
 }
@@ -317,7 +317,7 @@ html[dir=rtl] .menu-open {
 .terms .config:hover,
 .terms .fav:hover,
 .terms .shop:hover {
-    color: rgba(53, 53, 53, 1);
+    color: rgba(53, 53, 53, 0.6);
 }
 
 .terms .search,
@@ -953,7 +953,7 @@ html[dir=rtl] .filters-box .category-select .dropdown-menu {
 }
 
 .product-content .product-name {
-    color: rgba(53, 53, 53, 0.6);
+    color: rgba(53, 53, 53, 1);
     text-decoration: none;
     font-family: "regular";
     font-size: 16px;
@@ -964,7 +964,7 @@ html[dir=rtl] .filters-box .category-select .dropdown-menu {
 }
 
 .product-content .product-name:hover {
-    color: rgba(53, 53, 53, 1);
+    color: rgba(53, 53, 53, 0.6);
 }
 
 .product-content .price-size {
