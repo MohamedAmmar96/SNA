@@ -67,6 +67,7 @@ $(document).ready(function() {
 
     //This is to Open Side Menu
     $(".header-content .menu-btn").click(function() {
+        $("body").addClass("overflow");
         $(".side-menu").addClass("menu-open");
         $(".menu-btn .menu-icon").removeClass("open-menu")
         $(".menu-btn .menu-icon").addClass("close-menu")
@@ -74,6 +75,7 @@ $(document).ready(function() {
     });
 
     $(".close,.overlay-box").click(function() {
+        $("body").removeClass("overflow");
         $(".side-menu").removeClass("menu-open");
         $(".menu-btn .menu-icon").addClass("open-menu")
         $(".menu-btn .menu-icon").removeClass("close-menu")
@@ -83,6 +85,7 @@ $(document).ready(function() {
 
     // This is To Open search Box
     $(".search .search-icon").click(function() {
+        $("body").addClass("overflow");
         $(".overlay-box2").slideDown(500);
     });
 
@@ -94,6 +97,7 @@ $(document).ready(function() {
     });
 
     $(".close-search-btn,.overlay-box2").click(function() {
+        $("body").removeClass("overflow");
         $(".overlay-box2").slideUp(500);
     });
 
@@ -136,13 +140,15 @@ $(document).ready(function() {
     });
 
 
-    //This is to Open Side Menu
+    //This is to Open Cart Menu
     $(".shop .shop-icon").click(function() {
+        $("body").addClass("overflow");
         $(".cart").addClass("cart-open");
         $(".overlay-box4").fadeIn(500);
     });
 
     $(".cart-close,.overlay-box4").click(function() {
+        $("body").removeClass("overflow");
         $(".cart").removeClass("cart-open");
         $(".overlay-box4").fadeOut(500);
     });

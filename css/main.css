@@ -142,7 +142,7 @@ html[dir=rtl] .intro-content .page-language {
     height: 100%;
     background-color: #fff;
     z-index: 99999;
-    padding: 35px 40px 40px 40px;
+    padding: 35px 40px 10px 40px;
     box-shadow: 3px 3px 5px #0000001c, -3px -3px 5px #0000001c;
     transition: all 0.4s ease-in-out;
     overflow: auto;
@@ -184,13 +184,22 @@ html[dir=rtl] .side-menu .close {
     font-size: 14px;
 }
 
+.side-menu .side-space {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .menu-list {
+    margin-bottom: 60px;
+}
+
 .side-menu .menu-list .menu-list-li {
     padding: 5px 0;
 }
 
 .menu-list-li .menu-list-link {
     position: relative;
-    color: #353535;
+    color: rgba(53, 53, 53, 0.6);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 17px;
@@ -198,30 +207,15 @@ html[dir=rtl] .side-menu .close {
     transition: all 0.4s ease-in-out;
 }
 
-.menu-list-li .menu-list-link::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #353535;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.4s ease-in-out;
-}
-
-.menu-list-li .menu-list-link:hover::after {
-    visibility: visible;
-    transform: scaleX(1);
+.menu-list-li .menu-list-link:hover {
+    color: rgba(53, 53, 53, 1);
 }
 
 .side-menu .menu-icons-list {
-    position: absolute;
+    /* position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
     display: flex;
     flex-direction: row;
 }

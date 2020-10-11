@@ -40,7 +40,7 @@
         /***** Start of Side Menu *****/
         .side-menu {
             width: 240px;
-            padding: 25px 20px 25px 20px;
+            padding: 25px 20px 10px 20px;
         }
         .side-menu .close {
             top: 20px;
@@ -50,16 +50,10 @@
             left: 20px;
         }
         .side-menu .page-language {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
-        .side-menu .search-bar {
-            display: flex;
-        }
-        .side-menu .search-bar .search-input {
-            font-size: 15px;
-        }
-        .side-menu .search-bar .search-input::placeholder {
-            font-size: 15px;
+        .side-menu .menu-list {
+            margin-bottom: 120px;
         }
         .menu-list-li .menu-list-link {
             font-size: 15px;
@@ -169,8 +163,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        html[dir=rtl] .filters .filters-box .center-filters {
             align-items: center;
         }
         .filters .filters-box .close-filters {
@@ -183,11 +182,6 @@
             left: auto;
             right: 0;
         }
-        .filters-box .center-filters {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
         .filters-box .size-select .btn-default,
         .filters-box .orientation-select .btn-default,
         .filters-box .price-select .btn-default,
@@ -195,7 +189,8 @@
         .filters-box .artist-select .btn-default,
         .filters-box .category-select .btn-default {
             font-size: 20px;
-            text-align: center;
+            /* margin-right: auto;
+            margin-left: auto; */
         }
         .filters-box .size-select,
         .filters-box .orientation-select,
@@ -212,7 +207,6 @@
         html[dir=rtl] .filters-box .color-select,
         html[dir=rtl] .filters-box .artist-select,
         html[dir=rtl] .filters-box .category-select {
-            margin-right: auto;
             margin-left: 0;
         }
         .products {
@@ -431,7 +425,7 @@
         /***** Start of Side Menu *****/
         .side-menu {
             width: 300px;
-            padding: 25px 20px 25px 20px;
+            padding: 25px 20px 10px 20px;
         }
         .side-menu .close {
             top: 20px;
@@ -441,16 +435,10 @@
             left: 20px;
         }
         .side-menu .page-language {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
-        .side-menu .search-bar {
-            display: flex;
-        }
-        .side-menu .search-bar .search-input {
-            font-size: 15px;
-        }
-        .side-menu .search-bar .search-input::placeholder {
-            font-size: 15px;
+        .side-menu .menu-list {
+            margin-bottom: 120px;
         }
         .menu-list-li .menu-list-link {
             font-size: 15px;
@@ -758,8 +746,11 @@
             font-size: 28px;
         }
         .side-menu .page-language {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             /* display: none; */
+        }
+        .side-menu .menu-list {
+            margin-bottom: 120px;
         }
         .menu-list-li .menu-list-link {
             font-size: 15px;
