@@ -111,8 +111,7 @@ html[dir=rtl] .intro-content .page-language {
 
 .header-content .menu .menu-btn {
     cursor: pointer;
-    color: #353535;
-    opacity: 0.6;
+    color: rgba(53, 53, 53, 0.6);
     transition: all 0.4s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -120,7 +119,7 @@ html[dir=rtl] .intro-content .page-language {
 }
 
 .header-content .menu .menu-btn:hover {
-    opacity: 1;
+    color: rgba(53, 53, 53, 1);
 }
 
 .menu .menu-btn .menu-icon {
@@ -315,43 +314,16 @@ html[dir=rtl] .menu-open {
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+    color: rgba(53, 53, 53, 0.6);
     /* padding: 15px 0; */
     transition: all 0.4s ease-in-out;
 }
 
-.terms .search::after,
-.terms .config::after,
-.terms .fav::after,
-.terms .shop::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #353535;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.4s ease-in-out;
-}
-
-.terms .search::after {
-    bottom: 2px;
-}
-
-.terms .search:hover::after,
-.terms .config:hover::after,
-.terms .fav:hover::after,
-.terms .shop:hover::after {
-    visibility: visible;
-    transform: scaleX(1);
-}
-
-.terms .search:active::after,
-.terms .config:active::after,
-.terms .fav:active::after,
-.terms .shop:active::after {
-    display: none;
+.terms .search:hover,
+.terms .config:hover,
+.terms .fav:hover,
+.terms .shop:hover {
+    color: rgba(53, 53, 53, 1);
 }
 
 .terms .search,
@@ -987,31 +959,18 @@ html[dir=rtl] .filters-box .category-select .dropdown-menu {
 }
 
 .product-content .product-name {
-    color: #353535;
+    color: rgba(53, 53, 53, 0.6);
     text-decoration: none;
     font-family: "regular";
     font-size: 16px;
     display: block;
     height: 30px;
     position: relative;
-}
-
-.product-content .product-name::after {
-    content: "";
-    position: absolute;
-    bottom: -7px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #353535;
-    visibility: hidden;
-    transform: scaleX(0);
     transition: all 0.4s ease-in-out;
 }
 
-.product-content .product-name:hover::after {
-    visibility: visible;
-    transform: scaleX(1);
+.product-content .product-name:hover {
+    color: rgba(53, 53, 53, 1);
 }
 
 .product-content .price-size {

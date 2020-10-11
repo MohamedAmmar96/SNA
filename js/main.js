@@ -29,7 +29,6 @@ $(window).scroll(function() {
         $(".header").css("top", "-32px");
         $(".header").css("position", "fixed");
         $(".header").css("z-index", "999");
-        $(".header").css("box-shadow", "10px 0 10px #0000001c");
         $(".header-content").css("padding", "15px 0 10px 0");
         $(".header-content .logo").css("width", "20%");
         $(".header-content .menu").css("height", "57px");
@@ -38,7 +37,6 @@ $(window).scroll(function() {
         // $(".header").css("top", "0");
         $(".header").css("position", "fixed");
         $(".header").css("z-index", "999");
-        $(".header").css("box-shadow", "10px 0 10px #0000001c");
         $(".page-intro").css("display", "none");
         // $(".header-content").css("padding", "10px 0 10px 0");
         // $(".header-content .logo").css("width", "80%");
@@ -47,7 +45,6 @@ $(window).scroll(function() {
     } else if (($(window).width() <= 991)) {
         $(".header").css("top", "0");
         $(".header").css("position", "relative");
-        $(".header").css("box-shadow", "none");
         $(".header").css("z-index", "auto");
         // $(".header-content").css("padding", "15px 0 15px 0");
         // $(".header-content .logo").css("width", "100%");
@@ -57,7 +54,6 @@ $(window).scroll(function() {
         // $(".page-language").slideDown(300);
         $(".header").css("top", "0");
         $(".header").css("position", "relative");
-        $(".header").css("box-shadow", "none");
         $(".header").css("z-index", "auto");
         $(".header-content").css("padding", "20px 0");
         $(".header-content .logo").css("width", "100%");
