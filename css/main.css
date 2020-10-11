@@ -125,7 +125,11 @@ html[dir=rtl] .intro-content .page-language {
 
 .menu .menu-btn .menu-icon {
     font-size: 30px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
+}
+
+.menu .search {
+    display: none;
 }
 
 
@@ -179,38 +183,6 @@ html[dir=rtl] .side-menu .close {
 
 .side-menu .page-language .lang {
     font-size: 14px;
-}
-
-.side-menu .search-bar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px solid #353535;
-    margin-bottom: 5px;
-    display: none;
-}
-
-.side-menu .search-bar .search-input {
-    width: 90%;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    font-family: "medium";
-    margin-bottom: 5px;
-}
-
-.side-menu .search-bar .search-input::placeholder {
-    font-size: 17px;
-    font-family: "medium";
-    color: #353535;
-}
-
-.side-menu .search-bar .search-btn {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    transition: all 0.4s ease-in-out;
 }
 
 .side-menu .menu-list .menu-list-li {
@@ -343,7 +315,7 @@ html[dir=rtl] .menu-open {
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     transition: all 0.4s ease-in-out;
 }
 
@@ -353,7 +325,7 @@ html[dir=rtl] .menu-open {
 .terms .shop::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -364,7 +336,7 @@ html[dir=rtl] .menu-open {
 }
 
 .terms .search::after {
-    bottom: 10px;
+    bottom: 2px;
 }
 
 .terms .search:hover::after,
@@ -510,7 +482,7 @@ html[dir=rtl] .search-box .search-bar .search-btn {
 
 .config .config-list {
     position: absolute;
-    top: 100%;
+    top: 45px;
     left: 50%;
     transform: translateX(-50%);
     width: 140px;
@@ -634,14 +606,6 @@ html[dir=rtl] .cart-open {
     overflow: visible;
 }
 
-.main-item .main-img {
-    transition: all 0.4s ease-in-out;
-}
-
-.main-slider .main-item:hover .main-img {
-    transform: scale(0.98);
-}
-
 .main-slider .owl-carousel .owl-dots {
     position: absolute;
     left: 50%;
@@ -682,7 +646,7 @@ html[dir=rtl] .cart-open {
     position: sticky;
     top: 82px;
     background: #fff;
-    z-index: 99999;
+    z-index: 99;
     /* box-shadow: 3px 3px 5px #0000001c; */
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
@@ -691,11 +655,6 @@ html[dir=rtl] .cart-open {
 .cats .cats-box {
     display: flex;
     flex-direction: row;
-}
-
-html[dir=rtl] .cats-box .sort {
-    margin-right: 0;
-    margin-left: 60px;
 }
 
 .cats .filters {
@@ -752,7 +711,7 @@ html[dir=rtl] .filters .filters-name::after {
     color: #353535;
     opacity: 0.4;
     font-size: 24px;
-    z-index: 999999;
+    z-index: 99999;
     transition: all 0.4s ease-in-out;
     display: none;
 }
@@ -766,188 +725,171 @@ html[dir=rtl] .filters .close-filters {
     opacity: 1;
 }
 
-.cats-box .sort,
-.filters-box .size,
-.filters-box .orientation,
-.filters-box .price,
-.filters-box .color,
-.filters-box .artist {
-    margin-right: 110px;
-    position: relative;
+.cats-box .sort-select,
+.filters-box .size-select,
+.filters-box .orientation-select,
+.filters-box .price-select,
+.filters-box .color-select,
+.filters-box .artist-select {
+    margin-right: 60px;
+    /* position: relative; */
 }
 
-html[dir=rtl] .cats-box .sort,
-html[dir=rtl] .filters-box .size,
-html[dir=rtl] .filters-box .orientation,
-html[dir=rtl] .filters-box .price,
-html[dir=rtl] .filters-box .color,
-html[dir=rtl] .filters-box .artist {
+html[dir=rtl] .cats-box .sort-select,
+html[dir=rtl] .filters-box .size-select,
+html[dir=rtl] .filters-box .orientation-select,
+html[dir=rtl] .filters-box .price-select,
+html[dir=rtl] .filters-box .color-select,
+html[dir=rtl] .filters-box .artist-select {
     margin-right: 0;
-    margin-left: 120px;
+    margin-left: 60px;
 }
 
-.filters-box .category {
-    position: relative;
-}
-
-.cats-box .sort .sort-name,
-.filters-box .size .size-name,
-.filters-box .orientation .orientation-name,
-.filters-box .price .price-name,
-.filters-box .color .color-name,
-.filters-box .artist .artist-name,
-.filters-box .category .category-name {
+.cats-box .sort-select .btn-default,
+.filters-box .size-select .btn-default,
+.filters-box .orientation-select .btn-default,
+.filters-box .price-select .btn-default,
+.filters-box .color-select .btn-default,
+.filters-box .artist-select .btn-default,
+.filters-box .category-select .btn-default {
+    background-color: transparent;
+    border: none;
+    outline: none !important;
+    box-shadow: none;
     color: #353535;
-    font-family: "bold";
     font-size: 16px;
+    font-family: "bold";
     text-transform: uppercase;
-    cursor: pointer;
-    margin-bottom: 0;
 }
 
-.cats-box .sort .sort-name::after,
-.filters-box .size .size-name::after,
-.filters-box .orientation .orientation-name::after,
-.filters-box .price .price-name::after,
-.filters-box .color .color-name::after,
-.filters-box .artist .artist-name::after,
-.filters-box .category .category-name::after {
+.cats-box .sort-select .btn-default:hover,
+.filters-box .size-select .btn-default:hover,
+.filters-box .orientation-select .btn-default:hover,
+.filters-box .price-select .btn-default:hover,
+.filters-box .color-select .btn-default:hover,
+.filters-box .artist-select .btn-default:hover,
+.filters-box .category-select .btn-default:hover {
+    color: #353535;
+    background-color: transparent;
+}
+
+.cats-box .sort-select .btn-default::after,
+.filters-box .size-select .btn-default::after,
+.filters-box .orientation-select .btn-default::after,
+.filters-box .price-select .btn-default::after,
+.filters-box .color-select .btn-default::after,
+.filters-box .artist-select .btn-default::after,
+.filters-box .category-select .btn-default::after {
     content: "\e874";
     font-family: 'Linearicons-Free';
     color: #353535;
     font-size: 10px;
     font-weight: bold;
-    margin-left: 15px;
-    margin-top: 4px;
-    position: absolute;
+    margin-top: 1px;
+    margin-left: 20px;
 }
 
-html[dir=rtl] .cats-box .sort .sort-name::after,
-html[dir=rtl] .filters-box .size .size-name::after,
-html[dir=rtl] .filters-box .orientation .orientation-name::after,
-html[dir=rtl] .filters-box .price .price-name::after,
-html[dir=rtl] .filters-box .color .color-name::after,
-html[dir=rtl] .filters-box .artist .artist-name::after,
-html[dir=rtl] .filters-box .category .category-name::after {
+html[dir=rtl] .cats-box .sort-select .btn-default::after,
+html[dir=rtl] .filters-box .size-select .btn-default::after,
+html[dir=rtl] .filters-box .orientation-select .btn-default::after,
+html[dir=rtl] .filters-box .price-select .btn-default::after,
+html[dir=rtl] .filters-box .color-select .btn-default::after,
+html[dir=rtl] .filters-box .artist-select .btn-default::after,
+html[dir=rtl] .filters-box .category-select .btn-default::after {
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-.cats-box .sort .sort-list,
-.filters-box .size .size-list,
-.filters-box .orientation .orientation-list,
-.filters-box .price .price-list,
-.filters-box .color .color-list,
-.filters-box .artist .artist-list,
-.filters-box .category .category-list {
-    position: absolute;
-    padding: 5px 0;
-    top: 35px;
-    left: 60%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    overflow: auto;
-    z-index: 99999;
-    box-shadow: 3px 3px 5px #0000001c, -3px -3px 5px #0000001c;
-    display: none;
+.cats-box .sort-select .btn-default {
+    padding-left: 0;
 }
 
-html[dir=rtl] .cats-box .sort .sort-list,
-html[dir=rtl] .filters-box .size .size-list,
-html[dir=rtl] .filters-box .orientation .orientation-list,
-html[dir=rtl] .filters-box .price .price-list,
-html[dir=rtl] .filters-box .color .color-list,
-html[dir=rtl] .filters-box .artist .artist-list,
-html[dir=rtl] .filters-box .category .category-list {
+html[dir=rtl] .cats-box .sort-select .btn-default {
+    padding-right: 0;
+}
+
+.cats-box .sort-select .dropdown-menu {
+    left: -40px;
+}
+
+html[dir=rtl] .cats-box .sort-select .dropdown-menu {
     left: auto;
-    right: 60%;
-    transform: translateX(50%);
+    right: -20px;
 }
 
-.cats-box .sort .sort-list {
-    width: 180px;
+.filters-box .size-select .dropdown-menu {
+    left: -30px;
 }
 
-.filters-box .size .size-list {
-    width: 160px;
-    height: 250px;
-}
-
-.filters-box .orientation .orientation-list {
-    width: 140px;
-}
-
-.filters-box .price .price-list {
-    width: 170px;
-    left: 90%;
-}
-
-html[dir=rtl] .filters-box .price .price-list {
+html[dir=rtl] .filters-box .size-select .dropdown-menu {
     left: auto;
-    right: 90%;
+    right: -20px;
 }
 
-.filters-box .color .color-list {
-    width: 120px;
-    height: 280px;
-    left: 70%;
+.filters-box .orientation-select .dropdown-menu {
+    left: -3px;
 }
 
-html[dir=rtl] .filters-box .color .color-list {
-    right: 70%;
+html[dir=rtl] .filters-box .orientation-select .dropdown-menu {
     left: auto;
+    right: 0px;
 }
 
-.filters-box .artist .artist-list {
-    width: 240px;
-    height: 280px;
-    left: 80%;
+.filters-box .price-select .dropdown-menu {
+    left: -40px;
 }
 
-html[dir=rtl] .filters-box .artist .artist-list {
-    right: 80%;
+html[dir=rtl] .filters-box .price-select .dropdown-menu {
     left: auto;
+    right: -10px;
 }
 
-.filters-box .category .category-list {
-    width: 240px;
-    height: 280px;
-    left: 70%;
+.filters-box .color-select .dropdown-menu {
+    left: -15px;
 }
 
-html[dir=rtl] .filters-box .category .category-list {
+html[dir=rtl] .filters-box .color-select .dropdown-menu {
     left: auto;
-    right: 70%;
+    right: -15px;
 }
 
-.cats-box .sort .sort-list .option-li,
-.filters-box .size .size-list .option-li,
-.filters-box .orientation .orientation-list .option-li,
-.filters-box .price .price-list .option-li,
-.filters-box .color .color-list .option-li,
-.filters-box .artist .artist-list .option-li,
-.filters-box .category .category-list .option-li {
-    padding: 6px 20px;
-    color: rgb(53, 53, 53, 0.7);
-    text-transform: uppercase;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-    position: relative;
+.filters-box .artist-select .dropdown-menu {
+    left: -60px;
+}
+
+html[dir=rtl] .filters-box .artist-select .dropdown-menu {
+    left: auto;
+    right: -60px;
+}
+
+.filters-box .category-select .dropdown-menu {
+    left: -50px;
+}
+
+html[dir=rtl] .filters-box .category-select .dropdown-menu {
+    left: auto;
+    right: -50px;
+}
+
+.cats-box .sort-select .dropdown-menu>li,
+.filters-box .size-select .dropdown-menu>li,
+.filters-box .orientation-select .dropdown-menu>li,
+.filters-box .price-select .dropdown-menu>li,
+.filters-box .color-select .dropdown-menu>li,
+.filters-box .artist-select .dropdown-menu>li,
+.filters-box .category-select .dropdown-menu>li {
     font-family: "medium";
     font-size: 14px;
+    position: relative;
 }
 
-.cats-box .sort .sort-list .option-li:hover,
-.filters-box .size .size-list .option-li:hover,
-.filters-box .orientation .orientation-list .option-li:hover,
-.filters-box .price .price-list .option-li:hover,
-.filters-box .color .color-list .option-li:hover,
-.filters-box .artist .artist-list .option-li:hover,
-.filters-box .category .category-list .option-li:hover {
-    color: rgb(53, 53, 53, 1);
-}
-
-.option-li::after {
+.cats-box .sort-select .dropdown-menu>li::after,
+.filters-box .size-select .dropdown-menu>li::after,
+.filters-box .orientation-select .dropdown-menu>li::after,
+.filters-box .price-select .dropdown-menu>li::after,
+.filters-box .color-select .dropdown-menu>li::after,
+.filters-box .artist-select .dropdown-menu>li::after,
+.filters-box .category-select .dropdown-menu>li::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -958,7 +900,53 @@ html[dir=rtl] .filters-box .category .category-list {
     background-color: #ededed;
 }
 
-.option-li:last-child::after {
+.cats-box .sort-select .dropdown-menu>li:last-child::after,
+.filters-box .size-select .dropdown-menu>li:last-child::after,
+.filters-box .orientation-select .dropdown-menu>li:last-child::after,
+.filters-box .price-select .dropdown-menu>li:last-child::after,
+.filters-box .color-select .dropdown-menu>li:last-child::after,
+.filters-box .artist-select .dropdown-menu>li:last-child::after,
+.filters-box .category-select .dropdown-menu>li:last-child::after {
+    display: none;
+}
+
+
+/* .cats-box .sort-select .dropdown-menu>li:hover,
+.filters-box .size-select .dropdown-menu>li:hover,
+.filters-box .orientation-select .dropdown-menu>li:hover,
+.filters-box .price-select .dropdown-menu>li:hover,
+.filters-box .color-select .dropdown-menu>li:hover,
+.filters-box .artist-select .dropdown-menu>li:hover,
+.filters-box .category-select .dropdown-menu>li:hover {
+    background-color: #fff;
+} */
+
+.cats-box .sort-select .dropdown-menu>li>a,
+.filters-box .size-select .dropdown-menu>li>a,
+.filters-box .orientation-select .dropdown-menu>li>a,
+.filters-box .price-select .dropdown-menu>li>a,
+.filters-box .color-select .dropdown-menu>li>a,
+.filters-box .artist-select .dropdown-menu>li>a,
+.filters-box .category-select .dropdown-menu>li>a {
+    background-color: transparent;
+    color: rgb(53, 53, 53, 0.5);
+    outline: none !important;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+.cats-box .sort-select .dropdown-menu>li>a:hover,
+.filters-box .size-select .dropdown-menu>li>a:hover,
+.filters-box .orientation-select .dropdown-menu>li>a:hover,
+.filters-box .price-select .dropdown-menu>li>a:hover,
+.filters-box .color-select .dropdown-menu>li>a:hover,
+.filters-box .artist-select .dropdown-menu>li>a:hover,
+.filters-box .category-select .dropdown-menu>li>a:hover {
+    color: rgb(53, 53, 53, 1);
+}
+
+.caret {
     display: none;
 }
 
@@ -1078,7 +1066,6 @@ html[dir=rtl] .price-box .first-price {
     text-align: center;
     background-color: #353535;
     color: #fff;
-    border: 2px solid #353535;
     text-decoration: none;
     font-size: 15px;
     font-family: "regular";
@@ -1248,10 +1235,6 @@ html[dir=rtl] .email-box .email-input {
     color: #9c9c9c;
 }
 
-.email-box .email-input:focus {
-    border: 2px solid #353535;
-}
-
 .email-box .subscribe {
     position: absolute;
     top: 10px;
@@ -1340,18 +1323,6 @@ html[dir=rtl] .email-box .subscribe {
     display: none;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-.overlay-box5 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    display: none;
-    z-index: 99999;
-    background-color: #fff;
 }
 
 

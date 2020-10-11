@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/Linearicons.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/bootstrap-ul.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
@@ -54,14 +55,13 @@
                             <div class="menu-btn">
                                 <span class="menu-icon open-menu"></span>
                             </div>
+                            <div class="search">
+                                <span class="search-icon open-search"></span>
+                            </div>
                             <div class="side-menu">
                                 <button class="close"><span class="lnr lnr-cross"></span></button>
                                 <div class="page-language">
                                     <a class="lang" href="index.html">English</a>
-                                </div>
-                                <div class="search-bar">
-                                    <input class="search-input" type="text" placeholder="عن ماذا تبحث؟">
-                                    <button class="search-btn"><span class="lnr lnr-magnifier"></span></button>
                                 </div>
                                 <ul class="menu-list list-unstyled">
                                     <li class="menu-list-li"><a class="menu-list-link" href="home-ar.html">الرئيسية</a></li>
@@ -163,183 +163,170 @@
             <div class="cats-box">
 
                 <div class="sort wow animate__zoomIn" data-wow-duration="0.4s">
-                    <p class="sort-name">صنف حسب</p>
-                    <ul class="sort-list list-unstyled">
-                        <li class="option-li">وصل حديثاً</li>
-                        <li class="option-li">الأكثر مبيعًا حاليًا</li>
-                        <li class="option-li">الأكثر مبيعًا على الإطلاق</li>
-                        <li class="option-li">السعر من الادنى للاعلى</li>
-                        <li class="option-li">السعر من الاعلى للادنى</li>
-                        <li class="option-li">عشوائي</li>
-                    </ul>
+                    <select class="sort-select selectpicker" data-width="fit" title="الفرز بواسطة">
+                        <option>وصل حديثاً</option>
+                        <option>الأكثر مبيعًا حاليًا</option>
+                        <option>الأكثر مبيعًا على الإطلاق</option>
+                        <option>السعر من الادنى للاعلى</option>
+                        <option>السعر من الاعلى للادنى</option>
+                        <option>عشوائي</option>
+                    </select>
                 </div>
 
                 <div class="filters">
                     <p class="filters-name wow animate__zoomIn" data-wow-duration="0.4s">ابحث حسب</p>
-                    <button class="close-filters"><span class="lnr lnr-cross"></span></button>
                     <div class="filters-box wow animate__zoomIn" data-wow-duration="0.4s">
-
+                        <button class="close-filters"><span class="lnr lnr-cross"></span></button>
                         <div class="center-filters">
-                            <div class="size">
-                                <p class="size-name">الحجم</p>
-                                <ul class="size-list list-unstyled">
-                                    <li class="option-li">A4 (21x29.7 cm)</li>
-                                    <li class="option-li">A3 (29.7x42 cm)</li>
-                                    <li class="option-li">A2 (42x59.4 cm)</li>
-                                    <li class="option-li">30x40 cm</li>
-                                    <li class="option-li">40x50 cm</li>
-                                    <li class="option-li">50x50 cm</li>
-                                    <li class="option-li">50x70 cm</li>
-                                    <li class="option-li">70x100 cm</li>
-                                    <li class="option-li">أحجام أخرى</li>
-                                    <li class="option-li">صغير</li>
-                                    <li class="option-li">وسط</li>
-                                    <li class="option-li">كبير</li>
-                                </ul>
-                            </div>
 
-                            <div class="orientation">
-                                <p class="orientation-name">الاتجاهات</p>
-                                <ul class="orientation-list list-unstyled">
-                                    <li class="option-li">أفقي</li>
-                                    <li class="option-li">مربع</li>
-                                    <li class="option-li">رأسي</li>
-                                </ul>
-                            </div>
+                            <select class="size-select selectpicker" data-width="fit" title="الحجم">
+                                <option>A4 (21x29.7 cm)</option>
+                                <option>A3 (29.7x42 cm)</option>
+                                <option>A2 (42x59.4 cm)</option>
+                                <option>30x40 cm</option>
+                                <option>40x50 cm</option>
+                                <option>50x50 cm</option>
+                                <option>50x70 cm</option>
+                                <option>70x100 cm</option>
+                                <option>أحجام أخرى</option>
+                                <option>صغير</option>
+                                <option>وسط</option>
+                                <option>كبير</option>
+                            </select>
 
-                            <div class="price">
-                                <p class="price-name">السعر</p>
-                                <ul class="price-list list-unstyled">
-                                    <li class="option-li">10 - 50 يورو</li>
-                                    <li class="option-li">50 - 100 يورو</li>
-                                    <li class="option-li">100 - 150 يورو</li>
-                                    <li class="option-li">150 - 200 يورو</li>
-                                    <li class="option-li">250 - 300 يورو</li>
-                                    <li class="option-li">أكثر من 300 يورو</li>
-                                </ul>
-                            </div>
 
-                            <div class="color">
-                                <p class="color-name">اللون</p>
-                                <ul class="color-list list-unstyled">
-                                    <li class="option-li">أسود</li>
-                                    <li class="option-li">أبيض</li>
-                                    <li class="option-li">بيج</li>
-                                    <li class="option-li">أسود/أبيض</li>
-                                    <li class="option-li">أزرق</li>
-                                    <li class="option-li">بني</li>
-                                    <li class="option-li">ذهبي</li>
-                                    <li class="option-li">أخضر</li>
-                                    <li class="option-li">رمادي</li>
-                                    <li class="option-li">برتقالي</li>
-                                    <li class="option-li">وردي</li>
-                                    <li class="option-li">بنفسجي</li>
-                                    <li class="option-li">أحمر</li>
-                                    <li class="option-li">أصفر</li>
-                                    <li class="option-li">متعدد الألوان</li>
-                                </ul>
-                            </div>
+                            <select class="orientation-select selectpicker" data-width="fit" title="الاتجاهات">
+                                <option>أفقي</option>
+                                <option>مربع</option>
+                                <option>رأسي</option>
+                            </select>
 
-                            <div class="artist">
-                                <p class="artist-name">الفنان</p>
-                                <ul class="artist-list list-unstyled">
-                                    <li class="option-li">Aelxandra Papadimouli</li>
-                                    <li class="option-li">Alium</li>
-                                    <li class="option-li">Ana Frois</li>
-                                    <li class="option-li">Anastasia Benko</li>
-                                    <li class="option-li">Anna Johansson</li>
-                                    <li class="option-li">Ana Morner</li>
-                                    <li class="option-li">Anne Nowak</li>
-                                    <li class="option-li">Atelier by Mintstudio</li>
-                                    <li class="option-li">Atelier Cph</li>
-                                    <li class="option-li">Aure</li>
-                                    <li class="option-li">Berit Mogensen Lopez</li>
-                                    <li class="option-li">By Garmi</li>
-                                    <li class="option-li">Bycdesign Studio</li>
-                                    <li class="option-li">Chieska Fortune Smith</li>
-                                    <li class="option-li">Christina Kayser O.</li>
-                                    <li class="option-li">Coco Lapine</li>
-                                    <li class="option-li">Ekaterina Koroleva</li>
-                                    <li class="option-li">Felix Pottinger</li>
-                                    <li class="option-li">Fine Little Day</li>
-                                    <li class="option-li">Flip</li>
-                                    <li class="option-li">Francios Fontaine</li>
-                                    <li class="option-li">Galerie Maeght</li>
-                                    <li class="option-li">Gurilla</li>
-                                    <li class="option-li">Hanna Peterson</li>
-                                    <li class="option-li">Hein Studio</li>
-                                    <li class="option-li">Hilde Mork</li>
-                                    <li class="option-li">Jan Skacelik</li>
-                                    <li class="option-li">Johannes Geppert</li>
-                                    <li class="option-li">Julia Hallstrom Hjort</li>
-                                    <li class="option-li">Julia Lysen</li>
-                                    <li class="option-li">Jorgen Hansson</li>
-                                    <li class="option-li">Kinfolk</li>
-                                    <li class="option-li">Laura Nielsen</li>
-                                    <li class="option-li">Leise Dich Abrahamsen</li>
-                                    <li class="option-li">Lemon</li>
-                                    <li class="option-li">Lentov</li>
-                                    <li class="option-li">Lisa Wirenfelt</li>
-                                    <li class="option-li">Little Detroit</li>
-                                    <li class="option-li">louLou Avenue</li>
-                                    <li class="option-li">Lucrecia Rey Caro</li>
-                                    <li class="option-li">Malene Birger</li>
-                                    <li class="option-li">Maria Leinonen</li>
-                                    <li class="option-li">Martino Pietropoli</li>
-                                    <li class="option-li">MIJO Studio</li>
-                                    <li class="option-li">Mille Henriksen</li>
-                                    <li class="option-li">Moe Made it</li>
-                                    <li class="option-li">Nicoline A. Milton</li>
-                                    <li class="option-li">Noa Noon Gammelgaard</li>
-                                    <li class="option-li">Nord Projects</li>
-                                    <li class="option-li">Nygards Maria Bengtsson</li>
-                                    <li class="option-li">Nynne Rosenvinge</li>
-                                    <li class="option-li">Paper Collective</li>
-                                    <li class="option-li">People I've Loved</li>
-                                    <li class="option-li">Peytil</li>
-                                    <li class="option-li">Playtype</li>
-                                    <li class="option-li">Riikka Kantinkoski</li>
-                                    <li class="option-li">Robin Ahlgren</li>
-                                    <li class="option-li">Rosenstiels</li>
-                                    <li class="option-li">RUBIN Studio</li>
-                                    <li class="option-li">Sandra Blomen Maschinsky</li>
-                                    <li class="option-li">Sheryn Bullis</li>
-                                    <li class="option-li">Silke Bonde</li>
-                                    <li class="option-li">Sofia Lind</li>
-                                    <li class="option-li">SOMEE</li>
-                                    <li class="option-li">Studio Paradissi</li>
-                                    <li class="option-li">Tenna Elisabeth Studio</li>
-                                    <li class="option-li">Tilde Bay</li>
-                                    <li class="option-li">Tinka Luiga</li>
-                                    <li class="option-li">Tiny Stories</li>
-                                    <li class="option-li">Wensi Zhai</li>
-                                    <li class="option-li">Asthet</li>
-                                </ul>
-                            </div>
 
-                            <div class="category">
-                                <p class="category-name">الفئة</p>
-                                <ul class="category-list list-unstyled">
-                                    <li class="option-li">نبذة مختصرة</li>
-                                    <li class="option-li">حيوانات</li>
-                                    <li class="option-li">هندسة معمارية</li>
-                                    <li class="option-li">نبات</li>
-                                    <li class="option-li">رسومات</li>
-                                    <li class="option-li">طعام</li>
-                                    <li class="option-li">التصميم الجرافيكي</li>
-                                    <li class="option-li">الرسوم التوضيحية</li>
-                                    <li class="option-li">أطفال</li>
-                                    <li class="option-li">طبعة محدودة</li>
-                                    <li class="option-li">فن الخط</li>
-                                    <li class="option-li">الطبيعة</li>
-                                    <li class="option-li">فن الصورة</li>
-                                    <li class="option-li">تخفيضات</li>
-                                    <li class="option-li">مجموعة THE POSTER CLUB</li>
-                                    <li class="option-li">الطباعة</li>
-                                    <li class="option-li">ألوان مائية</li>
-                                    <li class="option-li">الكلمات والاقتباسات</li>
-                                </ul>
-                            </div>
+                            <select class="price-select selectpicker" data-width="fit" title="السعر">
+                                <option>10 - 50 يورو</option>
+                                <option>50 - 100 يورو</option>
+                                <option>100 - 150 يورو</option>
+                                <option>150 - 200 يورو</option>
+                                <option>250 - 300 يورو</option>
+                                <option>أكثر من 300 يورو</option>
+                            </select>
+
+
+                            <select class="color-select selectpicker" data-width="fit" title="اللون">
+                                <option>أسود</option>
+                                <option>أبيض</option>
+                                <option>بيج</option>
+                                <option>أسود/أبيض</option>
+                                <option>أزرق</option>
+                                <option>بني</option>
+                                <option>ذهبي</option>
+                                <option>أخضر</option>
+                                <option>رمادي</option>
+                                <option>برتقالي</option>
+                                <option>وردي</option>
+                                <option>بنفسجي</option>
+                                <option>أحمر</option>
+                                <option>أصفر</option>
+                                <option>متعدد الألوان</option>
+                            </select>
+
+
+                            <select class="artist-select selectpicker" data-width="fit" title="الفنان">
+                                <option>Aelxandra Papadimouli</option>
+                                <option>Alium</option>
+                                <option>Ana Frois</option>
+                                <option>Anastasia Benko</option>
+                                <option>Anna Johansson</option>
+                                <option>Ana Morner</option>
+                                <option>Anne Nowak</option>
+                                <option>Atelier by Mintstudio</option>
+                                <option>Atelier Cph</option>
+                                <option>Aure</option>
+                                <option>Berit Mogensen Lopez</option>
+                                <option>By Garmi</option>
+                                <option>Bycdesign Studio</option>
+                                <option>Chieska Fortune Smith</option>
+                                <option>Christina Kayser O.</option>
+                                <option>Coco Lapine</option>
+                                <option>Ekaterina Koroleva</option>
+                                <option>Felix Pottinger</option>
+                                <option>Fine Little Day</option>
+                                <option>Flip</option>
+                                <option>Francios Fontaine</option>
+                                <option>Galerie Maeght</option>
+                                <option>Gurilla</option>
+                                <option>Hanna Peterson</option>
+                                <option>Hein Studio</option>
+                                <option>Hilde Mork</option>
+                                <option>Jan Skacelik</option>
+                                <option>Johannes Geppert</option>
+                                <option>Julia Hallstrom Hjort</option>
+                                <option>Julia Lysen</option>
+                                <option>Jorgen Hansson</option>
+                                <option>Kinfolk</option>
+                                <option>Laura Nielsen</option>
+                                <option>Leise Dich Abrahamsen</option>
+                                <option>Lemon</option>
+                                <option>Lentov</option>
+                                <option>Lisa Wirenfelt</option>
+                                <option>Little Detroit</option>
+                                <option>louLou Avenue</option>
+                                <option>Lucrecia Rey Caro</option>
+                                <option>Malene Birger</option>
+                                <option>Maria Leinonen</option>
+                                <option>Martino Pietropoli</option>
+                                <option>MIJO Studio</option>
+                                <option>Mille Henriksen</option>
+                                <option>Moe Made it</option>
+                                <option>Nicoline A. Milton</option>
+                                <option>Noa Noon Gammelgaard</option>
+                                <option>Nord Projects</option>
+                                <option>Nygards Maria Bengtsson</option>
+                                <option>Nynne Rosenvinge</option>
+                                <option>Paper Collective</option>
+                                <option>People I've Loved</option>
+                                <option>Peytil</option>
+                                <option>Playtype</option>
+                                <option>Riikka Kantinkoski</option>
+                                <option>Robin Ahlgren</option>
+                                <option>Rosenstiels</option>
+                                <option>RUBIN Studio</option>
+                                <option>Sandra Blomen Maschinsky</option>
+                                <option>Sheryn Bullis</option>
+                                <option>Silke Bonde</option>
+                                <option>Sofia Lind</option>
+                                <option>SOMEE</option>
+                                <option>Studio Paradissi</option>
+                                <option>Tenna Elisabeth Studio</option>
+                                <option>Tilde Bay</option>
+                                <option>Tinka Luiga</option>
+                                <option>Tiny Stories</option>
+                                <option>Wensi Zhai</option>
+                                <option>Asthet</option>
+                            </select>
+
+
+                            <select class="category-select selectpicker" data-width="fit" title="الفئة">
+                                <option>نبذة مختصرة</option>
+                                <option>حيوانات</option>
+                                <option>هندسة معمارية</option>
+                                <option>نبات</option>
+                                <option>رسومات</option>
+                                <option>طعام</option>
+                                <option>التصميم الجرافيكي</option>
+                                <option>الرسوم التوضيحية</option>
+                                <option>أطفال</option>
+                                <option>طبعة محدودة</option>
+                                <option>فن الخط</option>
+                                <option>الطبيعة</option>
+                                <option>فن الصورة</option>
+                                <option>تخفيضات</option>
+                                <option>مجموعة THE POSTER CLUB</option>
+                                <option>الطباعة</option>
+                                <option>ألوان مائية</option>
+                                <option>الكلمات والاقتباسات</option>
+                            </select>
+
                         </div>
 
                     </div>
@@ -805,6 +792,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/bootstrap-ul.min.js"></script>
     <script src="js/main.js"></script>
 </body>
