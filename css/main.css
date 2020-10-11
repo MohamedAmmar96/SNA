@@ -1021,13 +1021,14 @@ html[dir=rtl] .price-box .first-price {
     display: block;
     width: 150px;
     height: 50px;
-    line-height: 45px;
+    line-height: 47px;
     text-align: center;
     background-color: #353535;
     color: #fff;
     text-decoration: none;
     font-size: 15px;
     font-family: "regular";
+    border: 2px solid #353535;
     margin-left: auto;
     margin-right: auto;
     transition: all 0.4s ease-in-out;
