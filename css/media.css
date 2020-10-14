@@ -295,7 +295,7 @@
             margin-bottom: 15px;
             margin-top: 15px;
         }
-        .footer-col .footer-heading::after {
+        .footer-col .footer-heading .footer-link::after {
             content: "\e874";
             font-family: 'Linearicons-Free';
             color: #353535;
@@ -306,7 +306,7 @@
             position: absolute;
             transition: all 0.4s ease-in-out;
         }
-        html[dir=rtl] .footer-col .footer-heading::after {
+        html[dir=rtl] .footer-col .footer-heading .footer-link::after {
             margin-left: 0;
             margin-right: 15px;
         }
@@ -683,7 +683,7 @@
             margin-bottom: 15px;
             margin-top: 15px;
         }
-        .footer-col .footer-heading::after {
+        .footer-col .footer-heading .footer-link::after {
             content: "\e874";
             font-family: 'Linearicons-Free';
             color: #353535;
@@ -694,7 +694,7 @@
             position: absolute;
             transition: all 0.4s ease-in-out;
         }
-        html[dir=rtl] .footer-col .footer-heading::after {
+        html[dir=rtl] .footer-col .footer-heading .footer-link::after {
             margin-left: 0;
             margin-right: 15px;
         }
