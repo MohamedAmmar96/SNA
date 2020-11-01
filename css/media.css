@@ -348,6 +348,74 @@
             font-family: "regular";
             line-height: 1.8;
         }
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            Start of Artists Page 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .artists .artists-box .small-sc {
+            margin-bottom: 30px;
+        }
+        .artists-info .artists-name {
+            font-size: 22px;
+        }
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            Start of Artist Page 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .artist .artist-box {
+            padding: 30px;
+        }
+        .artist-box .artist-info {
+            width: auto;
+            height: auto;
+            flex-direction: column;
+            margin-bottom: 60px;
+        }
+        .artist-info .artist-img-box {
+            width: 100%;
+            margin-right: 0;
+        }
+        html[dir=rtl] .artist-info .artist-img-box {
+            margin-left: 0;
+        }
+        .artist-info .artist-about {
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .artist-about .artist-name {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .artist-info .artist-about1,
+        .artist-info .artist-about2 {
+            text-align: justify;
+            line-height: 1.7;
+        }
+        .artist-info .artist-about1 {
+            margin-bottom: 15px;
+        }
+        /*** Start Of Artist Works ***/
+        .artist-works .works-title {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+        .artist-works .product-content .product-name {
+            font-size: 16px;
+            height: 40px;
+        }
+        .artist-works .product-content .price-box {
+            margin-bottom: 5px;
+        }
+        .artist-works .price-box .first-price {
+            font-size: 16px;
+        }
+        .artist-works .price-box .last-price {
+            font-size: 14px;
+        }
+        .artist-works .product-content .product-size {
+            font-size: 14px;
+        }
     }
     /**************** Extra Small Screens From 0 to 500px ****************/
     
@@ -381,6 +449,38 @@
         }
         .three .email-box {
             width: calc(100% - 10%);
+        }
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            Start of Artists Page 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .artists-info .artists-name {
+            font-size: 16px;
+        }
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            Start of Artist Page 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .artist .artist-box {
+            padding: 20px;
+        }
+        .artist-about .artist-name {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        /*** Start Of Artist Works ***/
+        .artist-works .works-title {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .artist-works .product-content .product-name {
+            font-size: 15px;
+            height: 40px;
+        }
+        .artist-works .price-box .first-price {
+            font-size: 15px;
+        }
+        .artist-works .price-box .last-price {
+            font-size: 13px;
         }
     }
     /*********************  Small Screens *********************/
@@ -735,6 +835,71 @@
             font-family: "regular";
             line-height: 2;
         }
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            Start of Artists Page 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .artists .artists-box .mid-sc {
+            margin-bottom: 30px;
+        }
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            Start of Artist Page 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .artist .artist-box {
+            padding: 30px;
+        }
+        .artist-box .artist-info {
+            width: auto;
+            height: auto;
+            flex-direction: column;
+            margin-bottom: 60px;
+        }
+        .artist-info .artist-img-box {
+            width: 50%;
+            margin-right: 0;
+        }
+        html[dir=rtl] .artist-info .artist-img-box {
+            margin-left: 0;
+        }
+        .artist-info .artist-about {
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .artist-about .artist-name {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .artist-info .artist-about1,
+        .artist-info .artist-about2 {
+            text-align: justify;
+            line-height: 1.7;
+        }
+        .artist-info .artist-about1 {
+            margin-bottom: 15px;
+        }
+        /*** Start Of Artist Works ***/
+        .artist-works .works-title {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+        .artist-works .product-content .product-name {
+            font-size: 16px;
+            height: 40px;
+        }
+        .artist-works .product-content .price-box {
+            margin-bottom: 5px;
+        }
+        .artist-works .price-box .first-price {
+            font-size: 16px;
+        }
+        .artist-works .price-box .last-price {
+            font-size: 14px;
+        }
+        .artist-works .product-content .product-size {
+            font-size: 14px;
+        }
     }
     /*********************  Medium Screens ********************/
     
@@ -872,6 +1037,18 @@
             font-family: "regular";
             color: #9c9c9c;
         }
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            Start Of Artist Page 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .artist-box .artist-info {
+            width: 880px;
+            height: 600px;
+            display: flex;
+            margin-bottom: 120px;
+        }
+        .artist-works .product-content .price-box {
+            margin-bottom: 5px;
+        }
     }
     /*********************  Large Screens *********************/
     
@@ -909,5 +1086,19 @@
         }
         .feature-content .feature-desc {
             font-size: 16px;
+        }
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                            Start of Artists Page 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .artists .artists-box {
+            padding: 30px;
+        }
+        html[dir=rtl] .artists .artists-box {
+            padding: 30px;
+        }
+        .artists-content .artists-img {
+            max-width: 100%;
+            transform: scale(1.05);
+            transition: all 0.4s ease-in-out;
         }
     }
